@@ -1,0 +1,15 @@
+#case sensitive
+def fun(s):
+    d={}
+    for i in s:
+        if i in d:
+            d[i]+=1
+        else:
+            d[i]=1
+    for i in d:
+        if d[i]==1:
+            return i
+        else:
+            print("no single occurance present of any character")
+            return
+fun(input("Enter the String: "))
