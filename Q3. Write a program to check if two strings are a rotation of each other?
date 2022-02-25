@@ -1,0 +1,12 @@
+def fun(s1,s2):
+    for i in range(len(s1)):
+        s1=s1+s1[0]
+        s1=s1.removeprefix(s1[0])
+        if s1==s2: 
+            print("strings are rotation of each other")
+            return
+        else:
+            continue
+    print("strings are not rotation of each other")
+s1,s2=(input("Enter 2 strings seperated by spaces: ")).split(" ")
+fun(s1,s2)
