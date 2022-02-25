@@ -1,0 +1,4 @@
+def reverser(string):
+    string=string[::-1]
+    return string
+reverser(input("Enter String: "))
